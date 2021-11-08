@@ -14,7 +14,7 @@ except ImportError:
     from HTMLParser import HTMLParser
          
 class cinecalidad(object):
-    url = 'https://cinecalidad.lol'
+    url = 'https://cinecalidad.lol/inicio'
     name = 'CineCalidad'
     supported_categories = {'all': 'all'}
     
@@ -22,7 +22,7 @@ class cinecalidad(object):
 
         def __init__(self):
             HTMLParser.__init__(self)
-            self.url = 'https://cinecalidad.lol'
+            self.url = 'https://cinecalidad.lol/inicio'
             self.insideDataDiv = False
             self.insideTitleDiv = False
             self.fullResData = []
@@ -85,5 +85,5 @@ class cinecalidad(object):
         parser.close()
 
 if __name__ == "__main__":
-    c = cinecalidad()
+    c = searchdiv()
     c.search('tomb%20raider')
