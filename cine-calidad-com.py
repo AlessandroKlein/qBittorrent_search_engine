@@ -14,7 +14,7 @@ except ImportError:
     from HTMLParser import HTMLParser
          
 class cinecalidad(object):
-    url = 'https://www.cine-calidad.com'
+    url = 'https://www.cine-calidad.com/index'
     name = 'CineCalidad'
     supported_categories = {'all': 'all'}
     
@@ -22,7 +22,7 @@ class cinecalidad(object):
 
         def __init__(self):
             HTMLParser.__init__(self)
-            self.url = 'https://www.cine-calidad.com'
+            self.url = 'https://www.cine-calidad.com/index'
             self.insideDataDiv = False
             self.insideTitleDiv = False
             self.fullResData = []
