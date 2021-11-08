@@ -22,7 +22,7 @@ class cinecalidad(object):
 
         def __init__(self):
             HTMLParser.__init__(self)
-            self.url = 'https://www.cinecalidad.to'
+            self.url = 'https://cinecalidad.lol'
             self.insideDataDiv = False
             self.insideTitleDiv = False
             self.fullResData = []
